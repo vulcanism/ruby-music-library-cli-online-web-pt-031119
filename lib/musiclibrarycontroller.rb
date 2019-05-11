@@ -5,6 +5,7 @@ class MusicLibraryController
   end
   
   def call
+<<<<<<< HEAD
     input = ""
     while input != "exit"
     
@@ -72,6 +73,12 @@ class MusicLibraryController
       song = Song.all.sort { |a, b| a.name <=> b.name }[input.to_i - 1]
       puts "Playing #{song.name} by #{song.artist.name}"
     end
+=======
+    puts "Welcome to your music library!"
+    puts "To list all of your songs, enter 'list songs'."
+    puts "To list all of the artists in your library, enter 'list artists'."
+    puts "To list all of the genres in your library, enter 'list genres'."
+>>>>>>> 825b6403b8e6567b8a1696d162df999d18fd52d3
   end
   
 end
